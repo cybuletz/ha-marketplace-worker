@@ -1,0 +1,28 @@
+name: Marketplace Fleet Worker
+version: "1.0.0"
+slug: marketplace_worker
+description: Crawler node for the Marketplace fleet. Outbound HTTPS only, no open ports.
+url: https://github.com/cybuletz/ha-marketplace-worker
+arch:
+  - amd64
+  - aarch64
+# Prebuilt by GitHub Actions; HA pulls it instead of building Chromium on the box.
+image: ghcr.io/cybuletz/ha-marketplace-worker-{arch}
+startup: application
+boot: auto
+init: false
+# No ports, no host network, no access to HA's API or config.
+options:
+  master_url: https://worker.cybu.net
+  worker_token: ""
+  worker_id: ""
+  worker_name: ""
+  request_delay_min: 2.5
+  request_delay_max: 4.5
+schema:
+  master_url: url
+  worker_token: password
+  worker_id: "match(^[a-z0-9_-]{0,40}$)"
+  worker_name: "str?"
+  request_delay_min: "float(1,30)"
+  request_delay_max: "float(1,60)"

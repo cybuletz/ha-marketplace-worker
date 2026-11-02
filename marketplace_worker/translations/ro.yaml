@@ -1,0 +1,17 @@
+configuration:
+  master_url:
+    name: Adresa Master
+    description: Adresa HTTPS a serverului Master Hub. Lasă valoarea implicită dacă nu ți s-a spus altfel.
+  worker_token:
+    name: Token worker
+    description: Tokenul secret primit de la administratorul flotei.
+  worker_id:
+    name: ID worker
+    description: ID scurt afișat în dashboard (litere mici, cifre, - și _). Gol = generat o singură dată.
+  worker_name:
+    name: Nume afișat
+    description: Numele afișat în dashboard. Gol = același ca ID-ul.
+  request_delay_min:
+    name: Pauză minimă între pagini (s)
+  request_delay_max:
+    name: Pauză maximă între pagini (s)

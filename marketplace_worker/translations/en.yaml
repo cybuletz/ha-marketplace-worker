@@ -1,0 +1,17 @@
+configuration:
+  master_url:
+    name: Master URL
+    description: HTTPS address of the Master Hub. Leave the default unless told otherwise.
+  worker_token:
+    name: Worker token
+    description: Secret token you received from the fleet admin.
+  worker_id:
+    name: Worker ID
+    description: Short id shown in the fleet dashboard (lowercase, digits, - and _). Empty = generated once.
+  worker_name:
+    name: Display name
+    description: Friendly name shown in the fleet dashboard. Empty = same as Worker ID.
+  request_delay_min:
+    name: Minimum delay between pages (s)
+  request_delay_max:
+    name: Maximum delay between pages (s)
