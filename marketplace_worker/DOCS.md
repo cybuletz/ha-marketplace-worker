@@ -25,7 +25,7 @@ Transformă serverul Home Assistant într-un nod de scanare pentru flota Marketp
    - **worker_token**: tokenul primit de la administrator;
    - **worker_name**: un nume ușor de recunoscut, de exemplu `Aurel HA`.
    Restul câmpurilor pot rămâne cu valorile implicite.
-5. Apasă **Save**, apoi în tab-ul **Info** pornește **Start-on-boot** și apasă **Start**.
+5. Apasă **Save**, apoi în tab-ul **Info** pornește **Start on boot** și **Auto update**, și apasă **Start**.
 6. În tab-ul **Log** ar trebui să apară `worker.py downloaded` și apoi mesajele worker-ului care se conectează la Master.
 
 ## Opțiuni
